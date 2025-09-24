@@ -1,0 +1,25 @@
+<script>
+    /*
+    Contador de Nomes Curtos
+    Dado o array de nomes: ["Ana", "Carlos", "Beatriz", "Ivo", "Fernanda", "Eder"].
+    Peça ao usuário para inserir um novo nome no array. 
+    Em seguida, utilizando for...of, conte quantos nomes na lista possuem menos de 5 caracteres. 
+    Apresente para o usuário qual o número total de nomes curtos encontrados.
+    */
+
+    nomes = ["Ana", "Carlos", "Beatriz", "Ivo", "Fernanda", "Eder"];
+
+    const name = prompt("por favor, insira um novo nome para entrar na lista.");
+
+    nomes.push(name);
+
+    let number = [ ]
+
+    for (let nome of nomes) {
+        if(nome.length <= 5) {
+            number.push(nome)
+        }
+    }
+
+    document.write(number.join(" - "));
+</script>
