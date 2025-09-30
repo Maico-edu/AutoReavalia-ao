@@ -14,12 +14,13 @@
     nomes.push(name);
 
     let number = [ ]
+    let total = 0;
 
     for (let nome of nomes) {
         if(nome.length <= 5) {
-            number.push(nome)
+            total = total + 1
         }
     }
 
-    document.write(number.join(" - "));
+    document.write(total);
 </script>

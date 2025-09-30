@@ -8,4 +8,14 @@
     Apresente para o usuário quais itens ele conseguirá comprar no mercado.
 
     */
+
+   let listaDeCompras = ['pão', 'queijo', 'leite', 'suco'];
+   const itensDisponiveis = ['maçã', 'pão', 'leite', 'manteiga', 'café'];
+   let disponiveis = [];
+
+   for (let name of itensDisponiveis) {
+        if (listaDeCompras.includes(name)) disponiveis.push(name);
+   }
+
+   document.write("os itens que conseguiu comprar foi: " + disponiveis.join (" - "));
 </script>
