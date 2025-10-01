@@ -6,4 +6,14 @@
     Em seguida, utilizando for...of, conte quantos nomes na lista possuem mais de 5 caracteres. 
     Apresente para o usuário qual o número total de nomes longos encontrados.
     */
-</script>
+
+   let nomes = ["Ana", "Carlos", "Beatriz", "Augusto", "Fernanda"];
+   const novoNome = prompt("insira um novo nome no array");
+   let numeros = []
+
+   for (let item of nomes) {
+    if (item.length <= 5)
+        numeros.push(item)
+   }
+   document.write("os nomes com menos de 5 caracterias sao: " + numeros.join(" - "))
+</script> 

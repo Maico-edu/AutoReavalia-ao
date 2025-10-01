@@ -7,6 +7,13 @@
     Valide se o nome inserido pelo usuário consta na lista, retornando para o usuário se ele está cadastrado ou não.
     */
 
-   let usuariosCadastrados = ['admin', 'julia', 'pedro', 'lucas'];
+    let usuariosCadastrados = ['admin', 'julia', 'pedro', 'lucas'];
+    const nomeS = prompt("insira o seu nome, por favor");
+
+    if (usuariosCadastrados.includes(nomeS.toLowerCase())) {
+        alert("parabens " + nomeS + " você entrou na lista")
+    }    else {
+        alert("voçê não esta na lista.")
+    }
 
 </script>

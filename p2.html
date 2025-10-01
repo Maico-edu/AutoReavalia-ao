@@ -10,6 +10,14 @@
     Npagas = [50.00, 15.50, 120.00, 80];
 
     const jurosC = prompt("insira um juros que podera cair encima das contas.");
+    let finalJuros = 0;
+    
+    
+    for (let item of Npagas) { 
+        let finalJuros = (jurosC + item / 100) + item;
+    }
+
+    document.write("as contas com juros sao: " + finalJuros)
 
 
 </script>
